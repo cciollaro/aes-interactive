@@ -8,3 +8,5 @@ http://www.sitepoint.com/a-basic-html5-template/
 https://code.google.com/p/crypto-js/
 
 http://getskeleton.com/
+
+http://jquery.com/
