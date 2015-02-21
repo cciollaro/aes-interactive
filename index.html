@@ -7,70 +7,128 @@
   <title>Interactive AES</title>
   <meta name="description" content="Interactive AES">
   <meta name="author" content="Chris">
-  <link rel="stylesheet" href="skeleton.css">
-  <script src="aes.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="aes.js"></script>
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
     <style>
-        #nav ul {
-            list-style: none;
-            padding: 20px;
-            background-color: #eee;
-        }
-        #nav ul li {
-            display: inline;
-            padding: 10px;
-        }
-        .nav_link {
-            text-transform: uppercase;
-            text-decoration: none;
-        }
-        body {
-            margin-left: 100px;
-        }
     </style>
  
     
 </head>
 
 <body>
-    <div id="content">
-    <div id="nav">
-        <ul>
-            <li><a class="nav_link active" href="#home">home</a></li>
-            <li><a class="nav_link" href="#learn">learn</a></li>
-            <li><a class="nav_link" href="#more">more</a></li>
-            <li><a class="nav_link" href="#about">about</a></li>
-        </ul>
-        <div id="home">
-        <ul>
-            <li><a class="nav_link active" href="#home/keys">keys</a></li>
-            <li><a class="nav_link active" href="#home/steps">steps</a></li>
-        </ul>
-            <div id="keys">
-                <div>keysize: (tba)</div>
-                <div>password<input type=text></div>
-                <div>key<input type=text></div>
-                <div>subkeys<input type=text><input type=text><input type=text><input type=text>
-                <input type=text>
-                <input type=text>
-                <input type=text>
-                <input type=text>
-                <input type=text>
-                <input type=text>
-                <input type=text>
-                <input type=text>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-2 column">
+        <nav id="myNavbar" class="navbar navbar-default" role="navigation"> 
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#">Scrollspy</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#section-1">Section 1</a></li>
+                        <li><a href="#section-2">Section 2</a></li>
+                        <li><a href="#section-3">Section 3</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Section 4<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section-4dot1">Section 4.1</a></li>
+                                <li><a href="#section-4dot2">Section 4.2</a></li>
+                                <li><a href="#section-4dot3">Section 4.3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#section-5">Section 5</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-10 column">
+            <h3>
+                Interactive AES
+            </h3>
+            <div class="tabbable" id="tabs-180350">
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="#panel-647025" data-toggle="tab">Section 1</a>
+                    </li>
+                    <li class="active">
+                        <a href="#panel-791948" data-toggle="tab">Section 2</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane" id="panel-647025">
+                        <p>
+                            I'm in Section 1.
+                        </p>
+                    </div>
+                    <div class="tab-pane active" id="panel-791948">
+                        <p>
+                            Howdy, I'm in Section 2.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="panel-305073">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                         <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-305073" href="#panel-element-413023">Key</a>
+                    </div>
+                    <div id="panel-element-413023" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="btn-group" data-toggle="buttons">
+                              <label class="btn btn-primary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
+                              </label>
+                              <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
+                              </label>
+                              <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
+                              </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                         <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-305073" href="#panel-element-647798">Input</a>
+                    </div>
+                    <div id="panel-element-647798" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Anim pariatur cliche...
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                         <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-305073" href="#panel-element-444321">Encryption</a>
+                    </div>
+                    <div id="panel-element-444321" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Anim pariatur cliche...
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="learn" style="display:none;">Learn content</div>
-        <div id="more" style="display:none;">More content</div>
-        <div id="about" style="display:none;">About content</div>
     </div>
-    </div><!-- content -->
-    <script>
-        jQuery(".nav_link").click(function() {jQuery("#" + this.innerHTML).toggle();});
-    </script>
+</div>
 </body>
 </html>
