@@ -7,6 +7,6 @@ http://www.sitepoint.com/a-basic-html5-template/
 
 http://point-at-infinity.org/jsaes/
 
-http://getskeleton.com/
+http://purecss.io/
 
 http://jquery.com/
