@@ -2,11 +2,12 @@
 An interactive, step-by-step breakdown of the AES algorithm. 
 
 
-# Special thanks to:
-http://www.sitepoint.com/a-basic-html5-template/
+# Shout outs to:
 
 http://point-at-infinity.org/jsaes/
 
-http://purecss.io/
+http://getbootstrap.com/
 
 http://jquery.com/
+
+http://www.sitepoint.com/a-basic-html5-template/
