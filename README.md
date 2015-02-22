@@ -11,5 +11,3 @@ http://point-at-infinity.org/jsaes/ - Very readable AES implementation.
 http://getbootstrap.com/
 
 http://jquery.com/
-
-http://www.sitepoint.com/a-basic-html5-template/
